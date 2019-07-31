@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Stopwatch</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="time-it.css">
+  </head>
+ 
+  <body>
+   
+    <span class="tab-bar">
+        <button id="timer-tab" class="tab-btn">Timer</button>
+        <button id="stopwatch-tab" class="tab-btn">Stopwatch</button>
+    </span>
+ 
+
+    <!-- <h2>Hello</h2> -->
+    <!-- <h3></h3> -->
+    <p id="main-clock" class="clock"></p>
+    <p id="timer" class="clock-timer">
+        <span class = "hr"></span>
+        <span>:</span>
+        <span class = "min"></span>
+        <span>:</span>
+        <span class = "seconds"></span>
+    </p>
+    <p id="stopwatch" class="clock-timer">
+      <span class = "stop-min"></span>
+      <span>:</span>
+      <span class = "stop-sec"></span>
+      <span>.</span>
+      <span class = "stop-mill-sec"></span>
+    </p>
+ 
+           
+    <div class="wrapper">
+      <button id="start-stop-btn" class = 'centerBtn' type = "button">start</button>
+      <button id="restart-lap-btn" class = 'centerBtn' type = "button">restart</button>
+    </div>
+ 
+    <!-- <table id="timer-table"><tr>HEY</tr></table> -->
+    <table id="stopwatch-table"></table>
+ 
+    <script src = "time-it.js" defer></script>
+  </body>
+</html>

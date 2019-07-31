@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+body {
+    background-color: rgb(210, 243, 255);
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+#main-clock {
+    font-size: 5vw;
+}
+#stopwatch, #timer {
+    font-size: 18vw;
+}
+.clock {
+    display: flex;
+}
+.clock-timer {
+    opacity: 0.5;
+    display: none;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+     -ms-transition: opacity 2s ease-in;
+      -o-transition: opacity 2s ease-in;
+         transition: opacity 2s ease-in;
+}
+.clock, .clock-timer {
+    margin: 2%;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:grey;
+}
+* {
+    font-family: sans-serif, Verdana;
+    font-weight: lighter;
+}
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+    caret-color: transparent;
+    text-shadow: 0 0 1.4rem rgb(131, 123, 255);
+    -webkit-text-stroke: 2px rgb(131, 123, 255);
+}
+.tab-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    height: 10vh;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+  }
+.tab-btn:hover {
+    opacity: 1;
+}
+.tab-btn.active {
+    opacity: 1;
+}
+.tab-bar {
+    display: flex;
+}
+.centerBtn {
+    font-size: 1rem;
+    display: inline-block;
+    background: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    margin: 0 30px;
+    padding: 2px 5px;
+    width: 100px;
+    height: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+#stopwatch-table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
