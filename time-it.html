@@ -8,6 +8,7 @@
         font-family: sans-serif;
       }
     </style>
+    <script src="jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="time-it.css">
   </head>
  
@@ -18,9 +19,6 @@
         <button id="stopwatch-tab" class="tab-btn">Stopwatch</button>
     </span>
  
-
-    <!-- <h2>Hello</h2> -->
-    <!-- <h3></h3> -->
     <p id="main-clock" class="clock"></p>
     <p id="timer" class="clock-timer">
         <span class = "hr"></span>
@@ -42,9 +40,32 @@
       <button id="start-stop-btn" class = 'centerBtn' type = "button">start</button>
       <button id="restart-lap-btn" class = 'centerBtn' type = "button">restart</button>
     </div>
- 
-    <!-- <table id="timer-table"><tr>HEY</tr></table> -->
+
     <table id="stopwatch-table"></table>
+
+    <button class="open-button">Questions, comments, concerns?</button>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container" id="contact-form" method="post">
+        <h2>Contact Us!</h2>
+
+        <label><b>Name</b></label>
+        <input type="text" id="name-input" placeholder="Enter name here…" class="form-control" required="">
+
+        <label><b>Phone</b></label>
+        <input type="text" id="phone-input" placeholder="Enter phone number" class="form-control" required="">
+
+        <label><b>Email</b></label>
+        <input type="text" id="email-input" placeholder="Enter email here…" class="form-control" required="">
+
+        <label><b>How can we help you?</b></label>
+        <textarea id="description-input" type="text" rows="3" placeholder="Enter your message…" class="form-control"></textarea>
+
+        <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys"></div>
+        <button type="button" class="btn send-email">Submit</button>
+        <button type="submit" class="btn cancel">Close</button>
+      </form>
+    </div>
  
     <script src = "time-it.js" defer></script>
   </body>
